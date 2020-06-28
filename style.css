@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    background-position: top center;
+    background-size: cover;
+    background-image: url(images/profile_black_dog.jpg);
+    font-family: Arial, sans-serif; 
+    font-size: 14px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+	height: 100%;
+	padding: 10px;
+	margin: 10px;
+}
+
+.row {
+	display: flex;
+    align-items: flex-start;
+}
+
+.columns {
+	display: flex;
+	align-items: flex-start;
+}
+
+.column {
+    background: #ebecf0;
+    width: 256px;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 4px;
+}
+
+.column-header {
+    background: #ff5113;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: 700; /* Жирный Bold */
+    color: #ebecf0; 
+    /* .column-header span */
+    width: 190px;
+    text-align: left;
+     /* .column-header кнопка*/
+    /* display: inline-block;
+    width: 35px;
+    margin-left: 8px;
+    text-align: center; */
+}
+
+.column-footer  {
+    margin: 16px 0;
+    font-weight: 700; /* Жирный Bold */ 
+    color: #a49791;  
+}
+
+.adder {
+    background: #ebecf0;
+    width: 256px;
+    border-radius: 4px;
+    padding: 8px; 
+    margin: 4px;
+}
+
+.adder span {
+    display: block;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 0;
+    font-weight: 700; /* Жирный Bold */
+    color: #ff5113;    
+}
+
+.adder span:hover {
+    background: #ff5113;
+    color: #ebecf0;
+}
+
+.note {
+    background: #a49791;
+    width: 100%;
+    min-height: 35px;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 8px;
+    font-weight: 400; /* Нормальный Normal */
+    text-align: left;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+}
+
+.note:hover {
+    padding: 7px;
+    border: 1px dotted #ff5113;
+    cursor: move;
+}
+
+.note:focus {
+	cursor: auto;
+}
+
+.action:hover {
+	cursor: pointer;
+}
+
+.note.dragged {
+    color: #ff5113;
+}
+
+.note.under {
+	opacity: 0.46;
+}
